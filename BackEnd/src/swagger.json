@@ -1,0 +1,147 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "API do Projeto Cadastro",
+    "description": "essa é a api do Projeto Cadastro",
+    "version": "0.0.1"
+  },
+
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "ambiente de desenvolvimento"
+    }
+  ],
+
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de candidato",
+        "description": "Rota de cadastro de usuário",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+
+                  "nome": {
+                    "type": "string"
+                  },
+
+                  "cargo": {
+                    "type": "string"
+                  },
+                  "dataNasc": {
+                    "type": "string"
+                  },
+                  "profissao": {
+                    "type": "string"
+                  },
+
+                  "estadocivil": {
+                    "type": "string"
+                  },
+
+                  "genero": {
+                    "type": "string"
+                  },
+                 
+                  "cep": {
+                    "type": "string"
+                  },
+                  
+                  "rua": {
+                    "type": "string"
+                  },
+                  
+                  "numero": {
+                    "type": "string"
+                  },
+                  
+                  
+                  "bairro": {
+                    "type": "string"
+                  },
+                  
+                  "cidade": {
+                    "type": "string"
+                  },
+                  
+                  "uf": {
+                    "type": "string"
+                  },
+                  
+                  "celular": {
+                    "type": "string"
+                  },
+                  
+                  "telfixo": {
+                    "type": "string"
+                  },
+                 
+                  "teldois": {
+                    "type": "string"
+                  },
+                  
+                  "contato": {
+                    "type": "string"
+                  },
+                  
+                  "email": {
+                    "type": "string"
+                  },
+                  
+                  "rg": {
+                    "type": "string"
+                  },
+                  
+                  "cpf": {
+                    "type": "string"
+                  },
+                
+                  "veiculo": {
+                    "type": "string"
+                  },
+                  
+                  "habil": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "eu mesmo": {
+                  "value": {
+                    "nome": "carol feldhaus",
+                    "cargo": "engenheira",
+                    "dataNasc": "21",
+                    "profissao": "tecnica de laboratorio",
+                    "estadocivil": "solteira",
+                    "genero": "feminino",
+                    "cep": "11111-111",
+                    "rua": "rua bolseiro",
+                    "numero": "666",
+                    "bairro": "bolsao",
+                    "cidade": "condado",
+                    "uf": "TM",
+                    "celular": "(66)1111-1111",
+                    "telfixo": "1111-1111",
+                    "teldois": "1111-1111",
+                    "contato": "Frodo",
+                    "email": "caroline@exemplo.com.br",
+                    "rg": "1.111.111",
+                    "cpf": "111.222.333-44",
+                    "veiculo": "sim",
+                    "habil": "sim"
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
